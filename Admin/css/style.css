@@ -1,0 +1,40 @@
+/*css login*/
+.backgroundlogin{
+  background: #ecf0f1;
+}
+
+.buton{ /*form login*/
+	margin-top: 5px;
+	width: 60%;
+  background-color: #2C3E50;
+  color: #fff;
+}
+
+.psw{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.square{
+  border-radius: 4px;
+	display: table;
+	width: 100%;
+	height: 100%;
+  margin-top: 100px;
+	box-shadow: 0 4px 8px 0 #bdc3c7;
+  background-color: #fff;
+}
+
+div.square p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    background: #fff;
+    margin: 10px 20% 0px 20%;
+}
