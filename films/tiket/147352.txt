@@ -1,0 +1,7 @@
+2
+judul : Venom
+genre : Sagardon
+kursi : A1 B2 
+tanggal : 25
+jam : 11.30
+352

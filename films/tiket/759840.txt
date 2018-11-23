@@ -1,0 +1,7 @@
+0
+judul : Fantastic Beasts And Where To Find Them
+genre : Adventure, Fantasy
+kursi : A3 B3 C2 
+tanggal : 25
+jam : 11.30
+840
