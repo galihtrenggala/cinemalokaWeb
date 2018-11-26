@@ -4,7 +4,7 @@
   <title>CINEMALOKA - Updater Mode</title>
 </head>
 <body class="backgroundlogin">
-  <?php include 'header_updater.php'; 
+  <?php include 'header_updater.php';
   $f = count($films);
   $i = 0;
 
