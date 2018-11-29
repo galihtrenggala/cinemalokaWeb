@@ -27,7 +27,7 @@
             <h6>Poster Photo</h6>
             <input type="file" class="form-control-file" id="exampleFormControlFile1" required>
           </div>
-          <h6>Rating</h6>
+          <h6>Nilai</h6>
           <select class="form-control form-control-sm mb-5" required>
             <option>1</option>
             <option>2</option>
@@ -38,12 +38,12 @@
           <div class="row">
             <div class="col-md-6">
               <div class="text-center mb-5">
-                <button class="btn buton">CANCEL</button>
+                <button class="btn buton">BATAL</button>
               </div>
             </div>
             <div class="col-md-6">
               <div class="text-center mb-5">
-                <button type="submit" class="btn buton">PUBLISH</button>
+                <button type="submit" class="btn buton">SELESAI</button>
               </div>
             </div>
           </div>

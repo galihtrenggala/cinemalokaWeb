@@ -12,7 +12,7 @@
 <body class="backgroundlogin">
   <nav class="navbar navbar-light bg-dark ">
     <a class="navbar-brand" style="color:#fff">Updater Film</a>
-    <button class="btn btn-light ml-auto mr-5" type="button">ADD FILM</button>
+    <button class="btn btn-light ml-auto mr-5" type="button">TAMBAH FILM</button>
     <button class="btn btn-outline-light" type="button">LOGOUT</button>
   </nav>
     <?php

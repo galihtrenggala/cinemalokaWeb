@@ -20,7 +20,7 @@
         </div>
         <div class="col-md-3">
           <div class="text-center">
-            <button class="btn buton">DELETE</button>
+            <button class="btn buton">HAPUS</button>
           </div>
         </div>
         <div class="col-md-3">
