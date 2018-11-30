@@ -16,8 +16,10 @@
         fgets($t);
         $terpesan[$i] = explode(" ", str_replace('kursi : ', '', fgets($t)));
       }
-
       fclose($t);
+    }
+    if (isset($terpesan)){
+      $pesan = array_reduce($terpesan, 'array_merge', array());
     }
 
   ?>
@@ -75,31 +77,21 @@
                 for ($i=1; $i <= 4; $i++) {
                 ?>
                 <div class="form-check form-check-inline col-md-2">
-                  <input class="form-check-input" type="checkbox" id="kursi<?php echo $A.$i;?>" value="<?php echo $A.$i;?>" name="kursi[]"
+                  <?php
+                    $kursi = $A.$i;
+                  ?>
+                  <input class="form-check-input" type="checkbox" id="kursi<?php echo $kursi;?>" value="<?php echo $kursi;?>" name="kursi[]"
                   <?php 
-                  if (isset($terpesan)) {
-                  $disable = false;
-                  $j = 1;
-                  $k = 0;
-                  while ($disable == false || $j < count($terpesan)) {
-                    if (isset($terpesan[$j])) {
-                    while ($k <= count($terpesan[$j])) {
-                        if($A.$i==$terpesan[$j][$k]){
-                          echo "disabled";
-                          $disable = true;
-                        }
-                        $k++;
+                  if (isset($pesan)){
+                    foreach ($pesan as $disable) {
+                      if ($kursi==$disable){
+                        echo 'disabled';
+                      }
                     }
                   }
-                    $j++;
-                  }
-
-
-                  }
-
                   ?>
                   >
-                  <label class="form-check-label" for="kursi<?php echo $A.$i;?>"><?php echo $A.$i;?></label>
+                  <label class="form-check-label" for="kursi<?php echo $kursi;?>"><?php echo $kursi;?></label>
                 </div>  
                 <?php
                 }

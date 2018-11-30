@@ -20,12 +20,12 @@
         </div>
         <div class="col-md-3">
           <div class="text-center">
-            <button class="btn buton">HAPUS</button>
+            <button class="btn buton" onclick="window.location.href='hapusFilm.php?film=<?php echo $i; ?>'">HAPUS</button>
           </div>
         </div>
         <div class="col-md-3">
           <div class="text-center">
-            <button class="btn buton">EDIT</button>
+            <button class="btn buton" onclick="window.location.href='edit_updater.php?film=<?php echo $i; ?>'" >EDIT</button>
           </div>
         </div>
       </div>

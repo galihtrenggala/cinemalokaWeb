@@ -17,6 +17,7 @@
     $films = glob('../films/images/movie*.jpg');
     $detil = glob('../films/*.txt');
     $tiket = glob('../films/tiket/*.txt');
+    $header= glob('../films/header/*');
     ?>
 </body>
 </html>

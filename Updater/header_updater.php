@@ -11,11 +11,12 @@
 </head>
 <body class="backgroundlogin">
   <nav class="navbar navbar-light bg-dark ">
-    <a class="navbar-brand" style="color:#fff">Updater Film</a>
-    <button class="btn btn-light ml-auto mr-5" type="button">TAMBAH FILM</button>
-    <button class="btn btn-outline-light" type="button">LOGOUT</button>
+    <a class="navbar-brand" style="color:#fff" href="home_updater.php">Updater Film</a>
+    <button class="btn btn-light ml-auto mr-5" type="button" onclick="window.location.href='edit_updater.php'">TAMBAH FILM</button>
+    <button class="btn btn-outline-light" type="button" onclick="window.location.href='login_updater.php' ">LOGOUT</button>
   </nav>
     <?php
+    $gambar = glob('../films/images/movie*.jpg');
     $films = glob('../films/*.txt');
     ?>
 </body>
