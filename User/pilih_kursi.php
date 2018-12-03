@@ -4,6 +4,7 @@
     <title>CINEMALOKA - Pilih Kursi</title>
   </head>
   <body>
+
   <?php include 'header.php';
     $jmlTiket = count($tiket);
     for ($i=0; $i < $jmlTiket; $i++) {
@@ -39,7 +40,7 @@
               
               ?>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="Tanggal" id="inlineRadio<?php echo $i?>" value="<?php echo $i?>">
+                <input class="form-check-input" type="radio" name="Tanggal" id="inlineRadio<?php echo $i?>" value="<?php echo $i?>" required>
                 <label class="form-check-label" for="inlineRadio<?php echo $i?>"><?php echo $i?></label>
               </div>
 
@@ -48,7 +49,7 @@
               ?>
               <p class="mt-3">JAM</p>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="Jam" id="inlineRadio1" value="11.30">
+                <input class="form-check-input" type="radio" name="Jam" id="inlineRadio1" value="11.30" required>
                 <label class="form-check-label" for="inlineRadio1">11:30</label>
               </div>
               <div class="form-check form-check-inline">
@@ -64,7 +65,8 @@
           <div class="col-md-4"></div>
           <div class="col-md-4 square mt-4">
               <div class="mb-3 mt-3">
-                <h4>Pilih Kursi <h6>(1 Kursi Rp20.000,-)</h6></h4> <!-- beresin ini -->
+                <h4>Pilih Kursi <h6>(1 Kursi Rp20.000,-)</h6></h4>
+                <p style="color: red" <?php  if (!isset($_GET['err'])){echo 'hidden';} ?> > Pilih setidaknya 1 kursi </p>
               </div>
               <?php 
               $A = 'A';
@@ -105,7 +107,7 @@
               <input hidden type="text" name="kodeFilm" value="<?php echo $_GET['film'];?>">
 
               <div class="text-center mb-3">
-                <button type="submit" class="mt-3 btn btn-dark" onclick="window.location.href='pembayaran.html'">LANJUT</button>
+                <button type="submit" class="mt-3 btn btn-dark">LANJUT</button>
               </div>
             </form>
           </div>
@@ -119,28 +121,4 @@
     </footer>
   </body>
 </html>
-<!-- ignore
-                <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">A1</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                <label class="form-check-label" for="inlineCheckbox2">A2</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
-                <label class="form-check-label" for="inlineCheckbox3">A3</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox4">B1</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                <label class="form-check-label" for="inlineCheckbox5">B2</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
-                <label class="form-check-label" for="inlineCheckbox6">B3</label>
-              </div>
+

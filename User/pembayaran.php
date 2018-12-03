@@ -5,14 +5,9 @@
   </head>
   <body>
     <?php include 'header.php';
-    echo $_POST['Tanggal'];
-    echo ", ";
-    echo $_POST['Jam'];
-    echo ", ";
-    foreach ($_POST['kursi'] as $kursi) {
-      echo $kursi.", ";
+    if (!isset($_POST['kursi'])){
+      header('Location: '.'pilih_kursi.php?film='.$_POST['kodeFilm'].'&err=1');
     }
-    echo $_POST['kodeFilm'];
     ?>
     <header>
       <div class="container mt-3 mb-3">
@@ -27,7 +22,7 @@
               <div class="mb-5 mt-5">
                   <h4 class="text-center">Metode Pembayaran</h4>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="metode" id="mMandiri" value="Mandiri">
+                  <input class="form-check-input" type="radio" name="metode" id="mMandiri" value="Mandiri" required>
                   <label class="form-check-label" for="mMandiri">
                     Transfer Mandiri
                   </label>

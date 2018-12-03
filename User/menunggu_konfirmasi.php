@@ -5,13 +5,6 @@
   </head>
   <body>
     <?php include 'header.php';
-    echo $_POST['tanggal'].", ";
-    echo $_POST['jam'].", ";
-    foreach ($_POST['kursi'] as $kursi) {
-      echo $kursi.", ";
-    }
-    echo $_POST['email'].", ";
-    echo $_POST['metode'];
     ?>
     <header>
       <div class="container mt-3 mb-3">
